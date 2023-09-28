@@ -1,0 +1,109 @@
+/*body define cor de fundo, cor das letras que estão em body e não tiveram suas cores alteradas*/
+body{
+    background-color: #4B0082;
+    color: white;
+    font-family: poppinsregular;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+/*cabeçalho*/
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Define a orientação e espaçamento do logo(titulo) */
+#title{
+
+    flex-direction: row;
+    line-height: 30px;
+    
+}
+/* configura as linhas do menu, display deixa elas lado a lado e o margin da separação para eles */
+li{
+    display: inline-block;
+    margin: 20px;
+}
+
+a{
+    color: white;
+}
+
+a:hover{
+    color: #FFA07A	;
+    transition: 0.3s all;
+}
+
+/* configuração do botão DOAR do menu, cor da borda e espessura */
+
+#doar-btn{
+    border: 2px solid #FFA07A;
+    padding: 10px;
+    border-radius: 15px;
+}
+/* configuração do botão DOAR do menu, define cor da letra e a transformação da cor, quando o mouse passar em cima */
+#doar-btn:hover{
+    background-color: #FFA07A;
+    color: white;
+}
+
+h1{
+    font-weight: 200;
+}
+ /* Define que a div e o article ficarão lado a lado */
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+/* Define espaçamento e letra do titulo principal */
+h2{
+    font-size: 56px;
+    line-height: 10px;
+    font-family: poppinsmedium;
+}
+/* Define a cor da primeira linha do ttulo */
+span{
+    color: #FFA07A;
+}
+/* modifica o paragrafo (fonte, */
+p{
+    line-height: 20px;
+    max-width: 500px;
+    font-family: poppinslight;
+}
+/* Define a resolução da imagem */
+img{
+    width: 300px;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+/* configuração do botão Enviar do formulario, definindo cor de fundo, cor da fonte e dimensionamento */
+form [type="submit"]{
+    height: 50px;
+    width: 50%;
+    background-color:#FFA07A;
+    color: white;
+    font-weight: bold;
+}
+form [type="submit"]:hover{
+    cursor: pointer;
+}
+/* configuração do formulario, borda, mergem.. */
+input{
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}
+
